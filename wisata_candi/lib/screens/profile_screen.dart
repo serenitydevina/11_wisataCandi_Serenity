@@ -13,7 +13,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     bool isSignedIn = true;
     String fullName ="DummyName";
     String userName = "DummyUserName";
-    int FavoriteCandiCount =0;
+    int FavoriteCandiCount =1;
 
     //TODO: 5.Implementasi Fungsi SignIn
     void signIn(){
@@ -127,7 +127,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               //   ],
               // ),
 
-              ProfileItemInfo(icon: Icons.person, label: 'Name', value: fullName, onEditPressed: (){debugPrint('Icon Edit Ditekan');}, iconColor: Colors.blue
+              ProfileItemInfo(icon: Icons.person, label: 'Name', value: fullName, onEditPressed: (){debugPrint('Icon Edit Ditekan');}, iconColor: Colors.blue,showEditIcon: isSignedIn,
               ),
               SizedBox(height: 4,),
               Divider(color: Colors.deepPurple[100],),
