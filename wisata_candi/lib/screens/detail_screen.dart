@@ -31,6 +31,7 @@ class DetailScreen extends StatelessWidget{
                     ),
                 ),
                 ),
+
                 //Tombol Back Custom
                 Padding(padding: const EdgeInsets.symmetric(horizontal: 16,
                 vertical: 32),
@@ -46,12 +47,14 @@ class DetailScreen extends StatelessWidget{
                 ),
               ],
             ),
+
           //Detail Info
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              
             //info atas
            const SizedBox(
             height: 16),
@@ -69,30 +72,30 @@ class DetailScreen extends StatelessWidget{
         
             //Info Tengah
             Row(children: [
-              Icon(Icons.place, color : Colors.red,
+              const Icon(Icons.place, color : Colors.red,
               ),
-              SizedBox(width: 8),
-              SizedBox(width: 70,
+              const SizedBox(width: 8),
+              const SizedBox(width: 70,
               child: Text('Lokasi', style: 
               TextStyle(fontWeight: FontWeight.bold),),)
               ,
               Text(': ${candi.location}')
             ],),
             Row(children: [
-              Icon(Icons.calendar_month, color : Colors.green,
+              const Icon(Icons.calendar_month, color : Colors.green,
               ),
-              SizedBox(width: 8),
-              SizedBox(width: 70,
+              const SizedBox(width: 8),
+              const SizedBox(width: 70,
               child: Text('Dibangun', style: 
               TextStyle(fontWeight: FontWeight.bold),),)
               ,
               Text(': ${candi.built}')
             ],),
             Row(children: [
-              Icon(Icons.house, color : Colors.amber,
+              const Icon(Icons.house, color : Colors.amber,
               ),
-              SizedBox(width: 8),
-              SizedBox(width: 70,
+              const SizedBox(width: 8),
+              const SizedBox(width: 70,
               child: Text('Tipe', style: 
               TextStyle(fontWeight: FontWeight.bold),),)
               ,
